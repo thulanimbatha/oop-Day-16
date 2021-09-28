@@ -14,5 +14,6 @@ quiz = QuizBrain(question_bank)
 while quiz.still_has_questions():
     quiz.next_question()
 
-print("END")
+print("Quiz completed!", 
+    f"Your final score is: {quiz.score}/{quiz.question_number} or {round(quiz.score / quiz.question_number, 2) * 100}%")
 
